@@ -17,7 +17,7 @@ using dense vector retrieval and transformer-based embeddings.
 
 A RAG pipeline combines retrieval with generation:
 
-[
+$
 \text{Query}
 \rightarrow
 \text{Retriever}
@@ -27,17 +27,17 @@ A RAG pipeline combines retrieval with generation:
 \text{LLM}
 \rightarrow
 \text{Answer}
-]
+$
 
 The retrieval stage determines what information the language model receives.
 
 Therefore:
 
-[
+$
 \text{Retrieval Quality}
 \propto
 \text{Answer Quality}
-]
+$
 
 ---
 
