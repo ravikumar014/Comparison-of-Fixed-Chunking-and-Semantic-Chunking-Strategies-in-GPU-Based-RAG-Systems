@@ -123,12 +123,12 @@ $$
 
 ## Cosine Similarity
 
-$$
-\text{sim}(e_i,e_j)
-=
-\frac{e_i \cdot e_j}
-{\lVert e_i \rVert \, \lVert e_j \rVert}
-$$
+```text
+sim(e_i, e_j)
+      e_i · e_j
+= -----------------
+  ||e_i|| ||e_j||
+```
 
 Interpretation:
 
