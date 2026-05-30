@@ -10,16 +10,15 @@ authors:
 repository-code: "https://github.com/ravikumar014/Comparison-of-Fixed-Chunking-and-Semantic-Chunking-Strategies-in-GPU-Based-RAG-Systems.git"
 
 keywords:
-
-* Retrieval Augmented Generation
-* RAG
-* Semantic Chunking
-* Fixed Chunking
-* FAISS
-* Information Retrieval
-* Transformers
-* Sentence Transformers
-* NLP
+  - "Retrieval Augmented Generation"
+  - "RAG"
+  - "Semantic Chunking"
+  - "Fixed Chunking"
+  - "FAISS"
+  - "Information Retrieval"
+  - "Transformers"
+  - "Sentence Transformers"
+  - "NLP"
 
 license: MIT
 
