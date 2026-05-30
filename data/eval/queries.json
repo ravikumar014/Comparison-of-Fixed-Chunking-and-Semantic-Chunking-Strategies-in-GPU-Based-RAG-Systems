@@ -1,0 +1,254 @@
+[
+  {
+    "query_id": "q1",
+    "query": "What are the primary differences between feature-based and direct methods in classical visual SLAM?",
+    "relevant_docs": ["doc01", "doc4"]
+  },
+  {
+    "query_id": "q2",
+    "query": "How does VISTA-SLAM utilize a symmetric two-view association (STA) model to reduce model complexity and enhance real-time performance compared to asymmetric architectures?",
+    "relevant_docs": ["doc01"]
+  },
+  {
+    "query_id": "q3",
+    "query": "What specific real-world challenges, such as sensor saturation and dynamic occlusions, does the Monado SLAM dataset (MSD) introduce for evaluating VIO/SLAM systems?",
+    "relevant_docs": ["doc02"]
+  },
+  {
+    "query_id": "q4",
+    "query": "In the context of SNI-SLAM++, how does the integration of hierarchical semantic representation and cross-attention based feature fusion improve mapping and tracking accuracy?",
+    "relevant_docs": ["doc4", "doc01"]
+  },
+  {
+    "query_id": "q5",
+    "query": "Compare the performance and physical characteristics of different RGB-D sensors like the Microsoft Kinect and Asus Xtion Pro Live for robotic SLAM applications.",
+    "relevant_docs": ["doc3", "doc4"]
+  },
+  {
+    "query_id": "q6",
+    "query": "What are the core components of the back-end optimization process in modern dense SLAM systems, specifically regarding pose graph optimization and loop closure?",
+    "relevant_docs": ["doc01", "doc4", "doc3"]
+  },
+  {
+    "query_id": "q7",
+    "query": "What are the primary differences between feature-based and direct methods in Visual SLAM, and what are the specific advantages of each?",
+    "relevant_docs": ["doc05", "doc07"]
+  },
+  {
+    "query_id": "q8",
+    "query": "How does Deep Learning contribute to solving the loop closure detection problem in visual SLAM systems compared to classical methods like Bag of Words?",
+    "relevant_docs": ["doc08", "doc06", "doc07"]
+  },
+  {
+    "query_id": "q9",
+    "query": "Discuss the impact of environmental appearance changes, such as seasonal variations and lighting conditions, on Visual Place Recognition (VPR) performance.",
+    "relevant_docs": ["doc06", "doc08"]
+  },
+  {
+    "query_id": "q10",
+    "query": "Explain the concept of Visual Odometry (VO) and its relationship with the broader Simultaneous Localization and Mapping (SLAM) framework.",
+    "relevant_docs": ["doc05", "doc07", "doc08"]
+  },
+  {
+    "query_id": "q11",
+    "query": "What are the common feature detection and description algorithms used in V-SLAM, and how do SIFT, SURF, and ORB compare in terms of efficiency?",
+    "relevant_docs": ["doc05", "doc07"]
+  },
+  {
+    "query_id": "q12",
+    "query": "How do End-to-End Deep Learning models for Visual Odometry differ from Hybrid models that integrate traditional geometry-based pipelines?",
+    "relevant_docs": ["doc08", "doc05"]
+  },
+  {
+    "query_id": "q13",
+    "query": "What are the primary differences between centralized and decentralized architectures in multi-robot SLAM systems?",
+    "relevant_docs": ["doc09", "doc11"]
+  },
+  {
+    "query_id": "q14",
+    "query": "How has the 'Standard Model' of SLAM evolved from early probabilistic formulations to modern factor graph-based optimization?",
+    "relevant_docs": ["doc10", "doc12"]
+  },
+  {
+    "query_id": "q15",
+    "query": "What are the specific challenges and sensor limitations associated with implementing SLAM for Autonomous Underwater Vehicles (AUVs)?",
+    "relevant_docs": ["doc11", "doc09"]
+  },
+  {
+    "query_id": "q16",
+    "query": "Explain the core methodology of KinectFusion and how its variants address the limitations of dense volumetric reconstruction.",
+    "relevant_docs": ["doc12", "doc10"]
+  },
+  {
+    "query_id": "q17",
+    "query": "What are the open research challenges for achieving 'Robust Perception' in SLAM for long-term autonomous operations?",
+    "relevant_docs": ["doc10", "doc09", "doc12"]
+  },
+  {
+    "query_id": "q18",
+    "query": "In multi-robot scenarios, how is the 'Initial Correspondence Problem' handled when the relative starting positions of robots are unknown?",
+    "relevant_docs": ["doc09", "doc11"]
+  },
+  {
+    "query_id": "q19",
+    "query": "What are the primary advantages and disadvantages of fusing Visual and LiDAR data for SLAM compared to using them as standalone modalities?",
+    "relevant_docs": ["doc15", "doc13"]
+  },
+  {
+    "query_id": "q20",
+    "query": "How does the 'semantic extractor' concept improve the robustness of modern VSLAM systems in dynamic environments or under significant lighting changes?",
+    "relevant_docs": ["doc16"]
+  },
+  {
+    "query_id": "q21",
+    "query": "Compare the historical evolution of Visual SLAM algorithms from feature-based methods like PTAM and ORB-SLAM to direct methods like LSD-SLAM and DSO.",
+    "relevant_docs": ["doc14", "doc16"]
+  },
+  {
+    "query_id": "q22",
+    "query": "What are the key characteristics and hardware limitations of different 3D sensors, such as LiDAR and ToF cameras, when applied to long-term autonomy?",
+    "relevant_docs": ["doc13", "doc15"]
+  },
+  {
+    "query_id": "q23",
+    "query": "Explain the role of Loop Closure Detection in VSLAM and how semantic information can help in reducing 'perceptual aliasing' during the mapping process.",
+    "relevant_docs": ["doc16", "doc14"]
+  },
+  {
+    "query_id": "q24",
+    "query": "What standard benchmarks and datasets (e.g., KITTI, TUM RGB-D) are commonly used to evaluate the trajectory accuracy and runtime performance of VSLAM algorithms?",
+    "relevant_docs": ["doc14", "doc16", "doc15"]
+  },
+  {
+  "query_id": "q25",
+  "query": "How does DPV-SLAM address the issue of deep SLAM systems periodically dropping framerates on a single GPU when running the frontend and backend simultaneously?",
+  "relevant_docs": ["doc17"]
+  },
+  {
+  "query_id": "q26",
+  "query": "Explain the concept of 'projective ambiguity' in VGGT-SLAM and why the authors propose optimizing on the SL(4) manifold instead of using standard Sim(3) transformations for submap alignment.",
+  "relevant_docs": ["doc18"]
+  },
+  {
+  "query_id": "q27",
+  "query": "Describe the two-hierarchy framework of SLAM3R, specifically the roles of the Image-to-Points (I2P) network and the Local-to-World (L2W) network in achieving dense 3D reconstruction without explicit camera parameter estimation.",
+  "relevant_docs": ["doc19"]
+  },
+  {
+  "query_id": "q28",
+  "query": "What are the three types of data association defined in ORB-SLAM3, and how does the 'Atlas' multi-map system utilize them to improve robustness and accuracy during tracking loss?",
+  "relevant_docs": ["doc20"]
+  },
+  {
+  "query_id": "q29",
+  "query": "Compare the loop closure mechanisms used in DPV-SLAM and VGGT-SLAM. How does each system handle drift correction in long-term sequences?",
+  "relevant_docs": ["doc17", "doc18"]
+  },
+  {
+  "query_id": "q30",
+  "query": "How does ORB-SLAM3's IMU initialization process achieve 1% scale error accuracy, and how does this compare to the initialization times of systems like VI-DSO or ORB-SLAM-VI?",
+  "relevant_docs": ["doc20"]
+  },
+  {
+  "query_id": "q31",
+  "query": "How does the use of a compact 'code' in CodeSLAM differ from traditional sparse and dense scene representations in terms of joint optimization and global consistency?",
+  "relevant_docs": ["doc40"]
+  },
+  {
+  "query_id": "q32",
+  "query": "Discuss the advantages of using a Recurrent Neural Network (RNN) architecture over single-image CNN approaches for 6-DoF camera relocalization, specifically regarding temporal smoothness.",
+  "relevant_docs": ["doc41"]
+  },
+  {
+  "query_id": "q33",
+  "query": "Compare the 2D-to-3D and 3D-to-2D search strategies for image-based localization. How does the active correspondence search pipeline combine these to handle large-scale scene reconstructions?",
+  "relevant_docs": ["doc42"]
+  },
+  {
+  "query_id": "q34",
+  "query": "Explain the 'Projected Uncertainty' mechanism in CoProU-VO and how it utilizes Vision Transformer (ViT) backbones to filter dynamic objects without explicit motion segmentation.",
+  "relevant_docs": ["doc43"]
+  },
+  {
+  "query_id": "q35",
+  "query": "Both VidLoc and CodeSLAM utilize deep learning for geometric tasks. How do their approaches to estimating 6-DoF poses compare when dealing with video sequences versus single keyframes?",
+  "relevant_docs": ["doc40", "doc41"]
+  },
+  {
+  "query_id": "q36",
+  "query": "In the context of unsupervised monocular VO and dense reconstruction, how do CoProU-VO and CodeSLAM address the limitations of static scene assumptions and high-dimensional state spaces?",
+  "relevant_docs": ["doc40", "doc43"]
+  },
+  {
+  "query_id": "q37",
+  "query": "How do learning-based systems like VidLoc and SLAM3R handle temporal constraints in video sequences to ensure smooth and consistent trajectory estimation?",
+  "relevant_docs": ["doc41", "doc19"]
+  },
+  {
+  "query_id": "q38",
+  "query": "Compare the strategies for handling camera parameters in SLAM: contrast ORB-SLAM3’s support for multiple lens models (pinhole, fisheye) with SLAM3R’s approach of regressing pointmaps without explicit calibration.",
+  "relevant_docs": ["doc20", "doc19"]
+  },
+  {
+  "query_id": "q39",
+  "query": "Discuss the evolution of dense reconstruction efficiency from CodeSLAM's compact code optimization to the real-time, feed-forward pointmap alignment used in SLAM3R.",
+  "relevant_docs": ["doc40", "doc19"]
+  },
+  {
+  "query_id": "q40",
+  "query": "Analyze the role of uncertainty in modern VO/SLAM pipelines, specifically comparing the 'Projected Uncertainty' in CoProU-VO with the uncertainty-aware patch marginalization in DPV-SLAM.",
+  "relevant_docs": ["doc43", "doc17"]
+  },
+  {
+  "query_id": "q41",
+  "query": "How does DROID-SLAM's use of a Dense Bundle Adjustment (DBA) layer and iterative recurrent updates differ from the EKF-based probabilistic framework used in MonoSLAM?",
+  "relevant_docs": ["doc22", "doc32"]
+  },
+  {
+  "query_id": "q42",
+  "query": "Explain the role of the 'deformable scale map' in BA-Track and how it bridges the gap between sparse point tracks and dense depth mapping for dynamic scene reconstruction.",
+  "relevant_docs": ["doc29"]
+  },
+  {
+  "query_id": "q43",
+  "query": "Discuss the advantages of using a 'flexible neural point cloud' representation in GIORIE-SLAM compared to the grid-based neural implicit encodings used in systems like GO-SLAM.",
+  "relevant_docs": ["doc26"]
+  },
+  {
+  "query_id": "q44",
+  "query": "Contrast the handling of dynamic scene elements in BA-Track, which uses motion decomposition, with the landmark-based 'active' approach to mapping and measurement in MonoSLAM.",
+  "relevant_docs": ["doc29", "doc32"]
+  },
+  {
+  "query_id": "q45",
+  "query": "How do DROID-SLAM and GIORIE-SLAM ensure global consistency in RGB-only SLAM without requiring costly backpropagation through the entire network during the optimization phase?",
+  "relevant_docs": ["doc22", "doc26"]
+  },
+  {
+  "query_id": "q46",
+  "query": "In the context of long-term trajectory tracking, evaluate the robustness of MonoSLAM's sparse landmark maps against DROID-SLAM's dense, iterative update strategy on challenging datasets.",
+  "relevant_docs": ["doc32", "doc22"]
+  },
+  {
+  "query_id": "q47",
+  "query": "How do deep SLAM systems like DPV-SLAM and DROID-SLAM optimize for real-time performance on a single GPU while maintaining the dense connectivity required for high-accuracy bundle adjustment?",
+  "relevant_docs": ["doc17", "doc22"]
+  },
+  {
+  "query_id": "q48",
+  "query": "Contrast the 'active mapping' strategy and EKF-based landmark initialization in MonoSLAM with the data association and multi-map 'Atlas' approach used in ORB-SLAM3 for handling tracking loss.",
+  "relevant_docs": ["doc32", "doc20"]
+  },
+  {
+  "query_id": "q49",
+  "query": "Discuss the different strategies for handling scene geometry in uncalibrated or casual video sequences, comparing VGGT-SLAM’s SL(4) manifold optimization with BA-Track’s motion decomposition and scale-map refinement.",
+  "relevant_docs": ["doc18", "doc29"]
+  },
+  {
+  "query_id": "q50",
+  "query": "How does the integration of learned priors affect global consistency in dense SLAM? Compare the use of compact latent 'codes' in CodeSLAM with the neural implicit point clouds used in GIORIE-SLAM.",
+  "relevant_docs": ["doc40", "doc26"]
+  }
+
+
+]

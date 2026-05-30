@@ -1,0 +1,202 @@
+[
+  {
+    "query_id": "q1",
+    "query": "Define the primary differences between feature-based and direct methods in Visual SLAM.",
+    "relevant_docs": ["doc01", "doc4", "doc05"]
+  },
+  {
+    "query_id": "q2",
+    "query": "What are the core components of the back-end optimization process, specifically focusing on pose graph optimization?",
+    "relevant_docs": ["doc01", "doc4", "doc10"]
+  },
+  {
+    "query_id": "q3",
+    "query": "List the standard benchmarks and datasets commonly used to evaluate the accuracy of VSLAM algorithms.",
+    "relevant_docs": ["doc14", "doc16", "doc15"]
+  },
+  {
+    "query_id": "q4",
+    "query": "Explain how deep learning-based loop closure detection differs from traditional Bag of Words (BoW) approaches.",
+    "relevant_docs": ["doc08", "doc16"]
+  },
+  {
+    "query_id": "q5",
+    "query": "What are the hardware limitations of 3D sensors like LiDAR and ToF cameras when used for long-term robot autonomy?",
+    "relevant_docs": ["doc13", "doc15"]
+  },
+  {
+    "query_id": "q6",
+    "query": "How does ORB-SLAM3 use the 'Atlas' multi-map system to recover from a loss of tracking?",
+    "relevant_docs": ["doc20"]
+  },
+  {
+    "query_id": "q7",
+    "query": "Compare the 'Active Mapping' strategy in MonoSLAM with the iterative bundle adjustment approach in DROID-SLAM.",
+    "relevant_docs": ["doc32", "doc22"]
+  },
+  {
+    "query_id": "q8",
+    "query": "What is the role of the 'Image-to-Points' (I2P) network in the SLAM3R framework for 3D reconstruction?",
+    "relevant_docs": ["doc19"]
+  },
+  {
+    "query_id": "q9",
+    "query": "Define 'perceptual aliasing' and explain how semantic information can help mitigate it in VSLAM.",
+    "relevant_docs": ["doc16", "doc14"]
+  },
+  {
+    "query_id": "q10",
+    "query": "How does the compact 'code' representation in CodeSLAM improve the efficiency of dense scene reconstruction?",
+    "relevant_docs": ["doc40"]
+  },
+  {
+    "query_id": "q11",
+    "query": "What are the advantages of using Recurrent Neural Networks (RNNs) for temporal smoothness in camera relocalization?",
+    "relevant_docs": ["doc41"]
+  },
+  {
+    "query_id": "q12",
+    "query": "Describe the main challenges of implementing SLAM for Autonomous Underwater Vehicles (AUVs) compared to ground robots.",
+    "relevant_docs": ["doc11", "doc09"]
+  },
+  {
+    "query_id": "q13",
+    "query": "How do DPV-SLAM and DROID-SLAM manage GPU memory to achieve real-time performance?",
+    "relevant_docs": ["doc17", "doc22"]
+  },
+  {
+    "query_id": "q14",
+    "query": "Explain the difference between centralized and decentralized architectures in multi-robot SLAM systems.",
+    "relevant_docs": ["doc09", "doc11"]
+  },
+  {
+    "query_id": "q15",
+    "query": "What is the purpose of the 'deformable scale map' in the BA-Track system for dynamic scene reconstruction?",
+    "relevant_docs": ["doc29"]
+  },
+  {
+    "query_id": "q16",
+    "query": "Compare the efficiency of ORB, SIFT, and SURF descriptors in the context of real-time feature matching.",
+    "relevant_docs": ["doc05", "doc07"]
+  },
+  {
+    "query_id": "q17",
+    "query": "How does CoProU-VO use uncertainty modeling to filter out dynamic objects in a scene?",
+    "relevant_docs": ["doc43"]
+  },
+  {
+    "query_id": "q18",
+    "query": "Define 'projective ambiguity' and explain why it is a challenge for uncalibrated monocular SLAM systems.",
+    "relevant_docs": ["doc18"]
+  },
+  {
+    "query_id": "q19",
+    "query": "What are the primary benefits of fusing Visual and LiDAR data for mapping in complex environments?",
+    "relevant_docs": ["doc15", "doc13"]
+  },
+  {
+    "query_id": "q20",
+    "query": "How does GIORIE-SLAM achieve global consistency using a flexible neural point cloud representation?",
+    "relevant_docs": ["doc26"]
+  }, 
+  {
+    "query_id": "q51",
+    "query": "What is the difference between a 'sparse' map and a 'dense' map in the context of Visual SLAM?",
+    "relevant_docs": ["doc40", "doc32", "doc01"]
+  },
+  {
+    "query_id": "q52",
+    "query": "Explain the concept of 'Loop Closure' and why it is critical for preventing long-term drift in SLAM.",
+    "relevant_docs": ["doc16", "doc20", "doc01"]
+  },
+  {
+    "query_id": "q53",
+    "query": "What are the common causes of 'tracking loss' in VSLAM systems, and how do systems typically recover?",
+    "relevant_docs": ["doc20", "doc17"]
+  },
+  {
+    "query_id": "q54",
+    "query": "Define 'Visual Odometry' (VO) and list two major differences between VO and full SLAM.",
+    "relevant_docs": ["doc05", "doc17"]
+  },
+  {
+    "query_id": "q55",
+    "query": "How does an RGB-D camera (like Kinect) simplify the SLAM process compared to a standard monocular camera?",
+    "relevant_docs": ["doc3", "doc04", "doc12"]
+  },
+  {
+    "query_id": "q56",
+    "query": "What is 'Bundle Adjustment' (BA), and what is its role in refining camera poses and 3D points?",
+    "relevant_docs": ["doc22", "doc29", "doc17"]
+  },
+  {
+    "query_id": "q57",
+    "query": "Identify three popular datasets used to test SLAM algorithms in indoor versus outdoor environments.",
+    "relevant_docs": ["doc14", "doc02", "doc15"]
+  },
+  {
+    "query_id": "q58",
+    "query": "What is a 'Factor Graph', and how is it used in modern back-end optimization?",
+    "relevant_docs": ["doc10", "doc12"]
+  },
+  {
+    "query_id": "q59",
+    "query": "Explain the 'Static Scene Assumption' and how dynamic objects (like walking people) can break traditional SLAM.",
+    "relevant_docs": ["doc43", "doc29"]
+  },
+  {
+    "query_id": "q60",
+    "query": "What are the advantages of using an IMU (Inertial Measurement Unit) alongside a camera in Visual-Inertial SLAM (VINS)?",
+    "relevant_docs": ["doc20", "doc02"]
+  },
+  {
+    "query_id": "q61",
+    "query": "Define 'Relocalization' and describe a scenario where a robot would need to use it.",
+    "relevant_docs": ["doc41", "doc20"]
+  },
+  {
+    "query_id": "q62",
+    "query": "What is 'Global Consistency', and why is it harder to achieve in large-scale environments?",
+    "relevant_docs": ["doc18", "doc26", "doc40"]
+  },
+  {
+    "query_id": "q63",
+    "query": "Describe the 'Pinhole Camera Model' and its importance in mapping 2D pixels to 3D space.",
+    "relevant_docs": ["doc20", "doc05"]
+  },
+  {
+    "query_id": "q64",
+    "query": "What is 'Scale Ambiguity' in monocular SLAM, and how can it be resolved using stereo cameras?",
+    "relevant_docs": ["doc18", "doc22"]
+  },
+  {
+    "query_id": "q65",
+    "query": "How does 'Semantic SLAM' use object labels (like 'chair' or 'road') to improve navigation?",
+    "relevant_docs": ["doc4", "doc16"]
+  },
+  {
+    "query_id": "q66",
+    "query": "What are 'Keyframes', and why do SLAM systems only optimize a subset of frames instead of every frame?",
+    "relevant_docs": ["doc40", "doc20", "doc17"]
+  },
+  {
+    "query_id": "q67",
+    "query": "Explain the difference between 'Centralized' and 'Decentralized' multi-robot SLAM in terms of communication.",
+    "relevant_docs": ["doc09", "doc11"]
+  },
+  {
+    "query_id": "q68",
+    "query": "What is 'Photometric Error' and how is it used in Direct SLAM methods?",
+    "relevant_docs": ["doc01", "doc14"]
+  },
+  {
+    "query_id": "q69",
+    "query": "Name two common applications of Visual SLAM in the consumer technology market.",
+    "relevant_docs": ["doc32", "doc43"]
+  },
+  {
+    "query_id": "q70",
+    "query": "What is a 'Pointmap' and how does SLAM3R use it to represent 3D scenes without explicit camera poses?",
+    "relevant_docs": ["doc19"]
+  }
+]
