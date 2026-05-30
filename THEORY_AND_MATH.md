@@ -66,10 +66,7 @@ where:
 To preserve context:
 
 $$
-s_{i+1}
-=======
-
-s_i + (k-o)
+s_{i+1} = s_i + (k - o)
 $$
 
 where:
@@ -128,10 +125,9 @@ $$
 
 $$
 \text{sim}(e_i,e_j)
-===================
-
+=
 \frac{e_i \cdot e_j}
-{|e_i||e_j|}
+{\|e_i\|\,\|e_j\|}
 $$
 
 Interpretation:
@@ -182,8 +178,7 @@ Self-Attention:
 
 $$
 \text{Attention}(Q,K,V)
-=======================
-
+=
 \text{softmax}
 \left(
 \frac{QK^T}{\sqrt{d_k}}
@@ -258,8 +253,7 @@ For normalized vectors:
 
 $$
 q \cdot x_i
-===========
-
+=
 \text{cosine similarity}
 $$
 
@@ -271,8 +265,7 @@ $$
 
 $$
 \text{Recall@k}
-===============
-
+=
 \frac{\text{Relevant Retrieved}}
 {\text{Total Relevant}}
 $$
@@ -285,8 +278,7 @@ Measures retrieval coverage.
 
 $$
 \text{Precision@k}
-==================
-
+=
 \frac{\text{Relevant Retrieved}}
 {k}
 $$
@@ -299,8 +291,7 @@ Measures retrieval purity.
 
 $$
 \text{MRR}
-==========
-
+=
 \frac{1}{Q}
 \sum_{i=1}^{Q}
 \frac{1}{rank_i}
@@ -314,8 +305,7 @@ Measures ranking quality.
 
 $$
 \text{nDCG@k}
-=============
-
+=
 \frac{\text{DCG@k}}
 {\text{IDCG@k}}
 $$
