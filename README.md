@@ -49,7 +49,7 @@ Project/
 │   ├── processed/
 │   └── chunks/
 │
-├── cache/
+├── artifacts/
 │   ├── fixed_chunks.json
 │   ├── semantic_chunks.json
 │   ├── fixed_embeddings.npy
