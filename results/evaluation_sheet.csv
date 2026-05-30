@@ -1,0 +1,5 @@
+query_id,method,faithfulness,relevance,not_found_correct
+q1,fixed,1,2,0
+q1,semantic,1,2,0
+q2,fixed,1,1,1
+q2,semantic,0,0,1
