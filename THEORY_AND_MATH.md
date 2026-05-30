@@ -51,10 +51,7 @@ $$
 Chunk:
 
 $$
-C_i
-___
-
-{w_{s_i},\dots,w_{s_i+k}}
+C_i \triangleq \{w_{s_i}, \dots, w_{s_i+k}\}
 $$
 
 where:
