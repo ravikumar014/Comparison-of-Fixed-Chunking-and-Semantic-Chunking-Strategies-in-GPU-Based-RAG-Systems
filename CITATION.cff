@@ -4,9 +4,8 @@ message: "If you use this repository, please cite this work."
 type: software
 
 authors:
-
-* family-names: Kumar
-  given-names: Ravi U
+  - family-names: Kumar
+    given-names: Ravi 
 
 repository-code: "https://github.com/ravikumar014/Comparison-of-Fixed-Chunking-and-Semantic-Chunking-Strategies-in-GPU-Based-RAG-Systems.git"
 
