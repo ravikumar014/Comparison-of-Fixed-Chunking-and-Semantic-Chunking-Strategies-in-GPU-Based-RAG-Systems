@@ -171,14 +171,7 @@ $$
 
 Self-Attention:
 
-$$
-\text{Attention}(Q,K,V)
-=
-\text{softmax}
-\left(
-\frac{QK^T}{\sqrt{d_k}}
-\right)V
-$$
+$$ \text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V $$
 
 This mechanism captures contextual relationships between tokens.
 
@@ -229,10 +222,7 @@ $$
 
 retrieve:
 
-$$
-\arg\max_i
-\text{cosine}(q,x_i)
-$$
+$$ \arg\max_i \text{cosine}(q,x_i) $$
 
 ---
 
@@ -246,11 +236,7 @@ IP = Inner Product
 
 For normalized vectors:
 
-$$
-q \cdot x_i
-=
-\text{cosine similarity}
-$$
+$$ q \cdot x_i = \text{cosine similarity} $$
 
 ---
 
@@ -258,12 +244,7 @@ $$
 
 ## Recall@k
 
-$$
-\text{Recall@k}
-=
-\frac{\text{Relevant Retrieved}}
-{\text{Total Relevant}}
-$$
+$$ \text{Recall@k}=  \frac{\text{Relevant Retrieved}} {\text{Total Relevant}} $$
 
 Measures retrieval coverage.
 
@@ -271,12 +252,7 @@ Measures retrieval coverage.
 
 ## Precision@k
 
-$$
-\text{Precision@k}
-=
-\frac{\text{Relevant Retrieved}}
-{k}
-$$
+$$ \text{Precision@k} = \frac{\text{Relevant Retrieved}} {k} $$
 
 Measures retrieval purity.
 
@@ -284,13 +260,7 @@ Measures retrieval purity.
 
 ## Mean Reciprocal Rank (MRR)
 
-$$
-\text{MRR}
-=
-\frac{1}{Q}
-\sum_{i=1}^{Q}
-\frac{1}{rank_i}
-$$
+$$ \text{MRR} = \frac{1}{Q} \sum_{i=1}^{Q} \frac{1}{rank_i} $$
 
 Measures ranking quality.
 
@@ -298,12 +268,7 @@ Measures ranking quality.
 
 ## nDCG@k
 
-$$
-\text{nDCG@k}
-=
-\frac{\text{DCG@k}}
-{\text{IDCG@k}}
-$$
+$$ \text{nDCG@k} = \frac{\text{DCG@k}} {\text{IDCG@k}} $$
 
 Measures ranking effectiveness.
 
