@@ -205,20 +205,25 @@ Generates semantically coherent chunks.
 ### Stage 4 — Embeddings + FAISS
 
 ```bash
-python -m experiments.stage4_embeddings_faiss
+python -m experiments.stage4_fixed_embeddings_faiss
+```
+
+```bash
+python -m experiments.stage4_semantic_embeddings_faiss
 ```
 
 Creates:
 
 * Embeddings
 * FAISS Index
+for both fixed and semantic.
 
 ---
 
 ### Stage 5 — Retrieval Evaluation
 
 ```bash
-python -m experiments.stage5_retrieval_eval
+python -m experiments.stage5_retrieval_evaluation
 ```
 
 Computes:
