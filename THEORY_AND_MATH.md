@@ -50,17 +50,17 @@ $$
 
 Chunk:
 
-[
+$$
 C_i
 ===
 
 {w_{s_i},\dots,w_{s_i+k}}
-]
+$$
 
 where:
 
-* (k) = chunk size
-* (s_i) = starting index
+* $k$ = chunk size
+* $s_i$ = starting index
 
 ---
 
@@ -68,16 +68,16 @@ where:
 
 To preserve context:
 
-[
+$$
 s_{i+1}
 =======
 
 s_i + (k-o)
-]
+$$
 
 where:
 
-* (o) = overlap size
+* $o$ = overlap size
 
 ---
 
@@ -109,33 +109,33 @@ Instead of splitting by token count, split according to semantic similarity.
 
 Sentence:
 
-[
+$$
 s_i
-]
+$$
 
 Embedding:
 
-[
+$$
 e_i = f(s_i)
-]
+$$
 
 where:
 
-[
+$$
 e_i \in \mathbb{R}^{768}
-]
+$$
 
 ---
 
 ## Cosine Similarity
 
-[
+$$
 \text{sim}(e_i,e_j)
 ===================
 
 \frac{e_i \cdot e_j}
 {|e_i||e_j|}
-]
+$$
 
 Interpretation:
 
@@ -149,9 +149,9 @@ Interpretation:
 
 If:
 
-[
+$$
 \text{sim}(e_i,e_{i+1}) < \tau
-]
+$$
 
 then:
 
@@ -165,25 +165,25 @@ Sentence embeddings are generated using transformers.
 
 Query:
 
-[
+$$
 Q = XW_Q
-]
+$$
 
 Key:
 
-[
+$$
 K = XW_K
-]
+$$
 
 Value:
 
-[
+$$
 V = XW_V
-]
+$$
 
 Self-Attention:
 
-[
+$$
 \text{Attention}(Q,K,V)
 =======================
 
@@ -191,7 +191,7 @@ Self-Attention:
 \left(
 \frac{QK^T}{\sqrt{d_k}}
 \right)V
-]
+$$
 
 This mechanism captures contextual relationships between tokens.
 
@@ -203,19 +203,19 @@ Embeddings exist in high-dimensional vector space.
 
 Semantically similar sentences satisfy:
 
-[
+$$
 |x_i-x_j|
 \rightarrow
 0
-]
+$$
 
 Semantically unrelated sentences satisfy:
 
-[
+$$
 |x_i-x_j|
 \gg
 0
-]
+$$
 
 Semantic chunking exploits this property.
 
@@ -236,16 +236,16 @@ Facebook AI Similarity Search
 
 Given query embedding:
 
-[
+$$
 q
-]
+$$
 
 retrieve:
 
-[
+$$
 \arg\max_i
 \text{cosine}(q,x_i)
-]
+$$
 
 ---
 
@@ -259,12 +259,12 @@ IP = Inner Product
 
 For normalized vectors:
 
-[
+$$
 q \cdot x_i
 ===========
 
 \text{cosine similarity}
-]
+$$
 
 ---
 
@@ -272,13 +272,13 @@ q \cdot x_i
 
 ## Recall@k
 
-[
+$$
 \text{Recall@k}
 ===============
 
 \frac{\text{Relevant Retrieved}}
 {\text{Total Relevant}}
-]
+$$
 
 Measures retrieval coverage.
 
@@ -286,13 +286,13 @@ Measures retrieval coverage.
 
 ## Precision@k
 
-[
+$$
 \text{Precision@k}
 ==================
 
 \frac{\text{Relevant Retrieved}}
 {k}
-]
+$$
 
 Measures retrieval purity.
 
@@ -300,14 +300,14 @@ Measures retrieval purity.
 
 ## Mean Reciprocal Rank (MRR)
 
-[
+$$
 \text{MRR}
 ==========
 
 \frac{1}{Q}
 \sum_{i=1}^{Q}
 \frac{1}{rank_i}
-]
+$$
 
 Measures ranking quality.
 
@@ -315,13 +315,13 @@ Measures ranking quality.
 
 ## nDCG@k
 
-[
+$$
 \text{nDCG@k}
 =============
 
 \frac{\text{DCG@k}}
 {\text{IDCG@k}}
-]
+$$
 
 Measures ranking effectiveness.
 
@@ -331,22 +331,22 @@ Measures ranking effectiveness.
 
 ## Fixed Chunking
 
-[
+$$
 O(n)
-]
+$$
 
 ---
 
 ## Semantic Chunking
 
-[
+$$
 O(n \cdot d)
-]
+$$
 
 where:
 
-* (n) = sentences
-* (d) = embedding dimension
+* $n$ = sentences
+* $d$ = embedding dimension
 
 ---
 
@@ -354,14 +354,14 @@ where:
 
 Exact retrieval:
 
-[
+$$
 O(Nd)
-]
+$$
 
 where:
 
-* (N) = total embeddings
-* (d) = embedding dimension
+* $N$ = total embeddings
+* $d$ = embedding dimension
 
 ---
 
@@ -369,11 +369,11 @@ where:
 
 The central hypothesis of this project is:
 
-[
+$$
 \boxed{
 \text{Semantically coherent chunk boundaries improve dense retrieval effectiveness.}
 }
-]
+$$
 
 Experimental results demonstrate that semantic chunking improves:
 
