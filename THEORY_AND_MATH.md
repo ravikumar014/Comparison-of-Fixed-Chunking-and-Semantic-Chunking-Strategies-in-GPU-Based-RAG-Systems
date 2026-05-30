@@ -44,9 +44,9 @@ A document is divided into equal-sized token windows.
 
 Document:
 
-[
+$$
 D = {w_1,w_2,\dots,w_n}
-]
+$$
 
 Chunk:
 
